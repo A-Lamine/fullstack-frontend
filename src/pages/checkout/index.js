@@ -19,7 +19,7 @@ const Index = () => {
     try {
       const stripe = await stripePromise;
       const response = await stripeService.createSession({
-        lamine: "Adel",
+        marque: "Nike",
         totalPrice: total
       });
       await stripe.redirectToCheckout({
