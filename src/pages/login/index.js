@@ -12,7 +12,7 @@ const Index = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
-
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         authService.login(user)
@@ -24,6 +24,7 @@ const Index = () => {
                 }
                 localStorage.setItem("token", data.token);
                 router.push("/account/profil");
+        
 
             })
             .catch((err) => {

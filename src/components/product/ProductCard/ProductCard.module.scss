@@ -1,0 +1,30 @@
+.product__card {
+    text-align: center;
+    margin: 1px;
+    &:hover {
+        .img {
+            width: 350px;
+            height: 350px;
+        }
+    }
+}
+.img {
+    width: 320px;
+    height: 320px;
+    margin: 2rem 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.p {
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-block-end: 1rem;
+    max-width: 35ch;
+}
+
+.h1 {
+    font-size: 50px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
